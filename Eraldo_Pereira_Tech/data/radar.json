@@ -1,0 +1,23 @@
+[
+  {
+    "titulo": "IA Identifica Milhares de Falhas Ocultas em Software",
+    "descricao": "Modelos avançados de IA revelaram vulnerabilidades estruturais em sistemas globais, acelerando a automação de auditorias de segurança e varreduras em SOCs.",
+    "data": "14/11/2026",
+    "link": "#contato",
+    "tags": ["#CyberSecurity", "#IA", "#Seguranca"]
+  },
+  {
+    "titulo": "Código Gerado por IA Fora da Esteira de TI Aumenta Riscos em SGBDs",
+    "descricao": "Scripts automatizados sem governança expõem credenciais e executam consultas SQL ineficientes, exigindo maior auditoria e sanitização em bancos de dados corporativos.",
+    "data": "15/11/2026",
+    "link": "#contato",
+    "tags": ["#Database", "#SQL", "#Governança"]
+  },
+  {
+    "titulo": "Migração para Criptografia Pós-Quântica Avança nas Redes Corporativas",
+    "descricao": "Data centers e provedores de infraestrutura iniciaram a transição para protocolos de criptografia Quantum-Safe para proteger o tráfego de dados contra futuras ameaças quânticas.",
+    "data": "16/11/2026",
+    "link": "#contato",
+    "tags": ["#Redes", "#Criptografia", "#Infraestrutura"]
+  }
+]

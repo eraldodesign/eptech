@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eraldo Pereira Tech — Tecnologia, conhecimento e soluções inteligentes.">
+    
+    <!-- IMPEDIR ABERTURA EM IFRAMES E FORÇAR HTTPS -->
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Eraldo Pereira Tech</title>
+    
+    <!-- Fontes Google (Plus Jakarta Sans & JetBrains Mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="cyan">
+
+    <!-- CURSOR CIBERNÉTICO NEON -->
+    <div id="cyber-cursor"></div>
+    <div id="cyber-cursor-dot"></div>
+
+    <!-- TOAST NOTIFICATION DE CÓPIA RÁPIDA -->
+    <div id="toast-notification" class="toast">
+        <span class="toast-icon">✓</span>
+        <span id="toast-message">Informação copiada com sucesso!</span>
+    </div>
+
+
+        <!-- CABEÇALHO -->
+    <!-- CABEÇALHO COM BOTÃO CLI VISÍVEL -->
+<!-- CABEÇALHO COM ESPAÇAMENTO EQUILIBRADO -->
+<header class="header">
+    <canvas id="matrix-header-canvas"></canvas>
+
+    <a href="#inicio" class="brand">
+        <span class="brand-mark">EP</span>
+        <span class="brand-text">ERALDO PEREIRA <b>TECH</b></span>
+    </a>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#radar">Radar Tech</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="header-actions">
+        <!-- SELETOR DE TEMA NEON -->
+        <div class="theme-picker">
+            <span class="theme-dot cyan active" data-theme="cyan" title="Tema Cyan Cyber"></span>
+            <span class="theme-dot green" data-theme="green" title="Tema Matrix Green"></span>
+            <span class="theme-dot purple" data-theme="purple" title="Tema Neon Purple"></span>
+        </div>
+
+        <!-- BOTÃO DOWNLOAD PDF -->
+        <a href="assets/Eraldo_Pereira_Perfil_Tecnico.pdf" download class="btn-pdf-nav" title="Baixar Perfil Técnico em PDF">
+            📄 CV PDF
+        </a>
+
+        <!-- BOTÃO TERMINAL CLI -->
+        <button id="open-terminal-btn" class="terminal-trigger-btn" title="Abrir Terminal CLI (~)">
+            <span class="term-icon">&gt;_</span> CLI
+        </button>
+    </div>
+</header>
+
+    <main>
+        <!-- APRESENTAÇÃO / HERO -->
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <p class="eyebrow">TECNOLOGIA • CONHECIMENTO • SOLUÇÕES</p>
+                <h1>
+                    Transformando conhecimento em
+                    <span>soluções tecnológicas.</span>
+                </h1>
+                <p class="hero-description">
+                    Análise de sistemas, banco de dados, infraestrutura
+                    e educação em tecnologia. Experiência técnica
+                    aplicada a desafios reais.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn primary">Vamos conversar</a>
+                    <a href="#projetos" class="btn secondary">Conheça meus projetos</a>
+                    <a href="assets/Eraldo_Pereira_Perfil_Tecnico.pdf" download class="btn outline-pdf">
+                        ⬇ Baixar Perfil Técnico (PDF)
+                    </a>
+                </div>
+            </div>
+
+                <div class="hero-art">
+                    <canvas id="neural-canvas"></canvas>
+                <div class="glow-core"></div>
+            </div>                
+            </div>
+        </section>
+
+        <!-- SOBRE MIM -->
+        <section class="section about-section" id="sobre">
+            <div class="about-layout">
+                <div class="about-heading">
+                    <p class="eyebrow">CONHEÇA MINHA TRAJETÓRIA</p>
+                    <h2>Tecnologia, conhecimento e inovação.</h2>
+                    <span class="about-role">ANALISTA DE SISTEMAS | PROFESSOR DE TI</span>
+                </div>
+
+                <div class="about-description">
+                    <p class="about-lead">
+                        Olá! Sou Eraldo Pereira. Minha trajetória profissional é construída na conexão entre tecnologia, conhecimento e desenvolvimento de soluções.
+                    </p>
+                    <p>
+                        Atuo na área de Tecnologia da Informação, reunindo experiências em análise de sistemas, desenvolvimento, banco de dados, redes, infraestrutura e segurança da informação.
+                    </p>
+                    <p>
+                        Também atuo na educação profissional e no ensino superior, compartilhando conhecimentos e contribuindo para a formação de pessoas na área de tecnologia.
+                    </p>
+                    <p>
+                        Acredito que a tecnologia deve ir além das ferramentas: precisa resolver problemas, otimizar processos e gerar resultados. Por isso, mantenho meu interesse em inovação, inteligência artificial e novas soluções digitais.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-highlights">
+                <article class="about-item">
+                    <span class="about-number">01</span>
+                    <h3>Tecnologia</h3>
+                    <p>Sistemas, desenvolvimento, banco de dados, redes e infraestrutura.</p>
+                </article>
+
+                <article class="about-item">
+                    <span class="about-number">02</span>
+                    <h3>Conhecimento</h3>
+                    <p>Ensino, treinamentos, educação tecnológica e compartilhamento de experiências.</p>
+                </article>
+
+                <article class="about-item">
+                    <span class="about-number">03</span>
+                    <h3>Inovação</h3>
+                    <p>Inteligência artificial, segurança da informação e soluções digitais.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SERVIÇOS / ÁREAS DE ATUAÇÃO -->
+        <section class="section" id="servicos">
+            <p class="eyebrow">COMO POSSO AJUDAR</p>
+            <h2>Áreas de atuação</h2>
+            <p class="section-description">Conhecimentos e serviços que podem apoiar pessoas e organizações.</p>
+
+            <div class="grid">
+                <article class="card">
+                    <span class="icon">⌘</span>
+                    <h3>Sistemas e desenvolvimento</h3>
+                    <p>Desenvolvimento web, automação e melhoria de processos.</p>
+                </article>
+
+                <article class="card">
+                    <span class="icon">▤</span>
+                    <h3>Banco de dados</h3>
+                    <p>Modelagem, consultas SQL, administração e organização de dados.</p>
+                </article>
+
+                <article class="card">
+                    <span class="icon">⌁</span>
+                    <h3>Redes e infraestrutura</h3>
+                    <p>Planejamento de redes, cabeamento estruturado e conectividade.</p>
+                </article>
+
+                <article class="card">
+                    <span class="icon">◉</span>
+                    <h3>Câmeras e monitoramento</h3>
+                    <p>Instalação e organização de sistemas de CFTV e monitoramento.</p>
+                </article>
+
+                <article class="card">
+                    <span class="icon">▣</span>
+                    <h3>Ensino e treinamentos</h3>
+                    <p>Capacitação em informática, banco de dados, redes e ferramentas digitais.</p>
+                </article>
+
+                <article class="card">
+                    <span class="icon">✳</span>
+                    <h3>Segurança e inovação</h3>
+                    <p>Segurança da informação, LGPD e inteligência artificial.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- PROJETOS EM DESTAQUE -->
+        <section class="section" id="projetos">
+            <p class="eyebrow">NA PRÁTICA</p>
+            <h2>Projetos em destaque</h2>
+            <p class="section-description">Uma seleção de soluções, estudos e arquiteturas aplicadas.</p>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="ai">IA & Automação</button>
+                <button class="filter-btn" data-filter="iot">IoT & Segurança</button>
+                <button class="filter-btn" data-filter="network">Redes & DevOps</button>
+            </div>
+
+            <div class="grid">
+                <article class="card project" data-category="ai" data-project-id="omr">
+                    <div class="project-art gradient-1">
+                        <span>01</span>
+                        <small>WEB / AUTOMATION / AI</small>
+                    </div>
+                    <div class="project-info">
+                        <h3>Corretor Inteligente OMR</h3>
+                        <p>Aplicação web e móvel para leitura e correção automática de gabaritos via visão computacional com OpenCV e backend Python.</p>
+                        <div class="project-techs">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>OpenCV</span>
+                            <span>Flutter</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="link-btn open-arch-modal" data-project="omr">Arquitetura & Detalhes →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card project" data-category="iot" data-project-id="elo">
+                    <div class="project-art gradient-2">
+                        <span>02</span>
+                        <small>IOT / SECURITY / LEGAL</small>
+                    </div>
+                    <div class="project-info">
+                        <h3>Projeto ELO</h3>
+                        <p>Sistema integrado de resposta a emergências conectando dispositivos vestíveis via Bluetooth, app móvel e painel de monitoramento.</p>
+                        <div class="project-techs">
+                            <span>IoT</span>
+                            <span>Bluetooth LE</span>
+                            <span>Mobile</span>
+                            <span>LGPD</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="link-btn open-arch-modal" data-project="elo">Arquitetura & Detalhes →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card project" data-category="network" data-project-id="cyberia">
+                    <div class="project-art gradient-3">
+                        <span>03</span>
+                        <small>NETWORKS / DEVOPS</small>
+                    </div>
+                    <div class="project-info">
+                        <h3>CyberIA & Lab de Redes</h3>
+                        <p>Ambientes virtuais para simulação de incidentes de segurança, infraestrutura Cisco SD-WAN e topologias corporativas.</p>
+                        <div class="project-techs">
+                            <span>Docker</span>
+                            <span>GNS3 / EVE-NG</span>
+                            <span>Linux</span>
+                            <span>Cisco</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="link-btn open-arch-modal" data-project="cyberia">Arquitetura & Detalhes →</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- RADAR TECH -->
+        <section class="section radar" id="radar">
+            <div class="radar-header-block">
+                <div>
+                    <p class="eyebrow">ATUALIZAÇÃO CONTÍNUA</p>
+                    <span class="status">AO VIVO</span>
+                    <h2>Radar Tech</h2>
+                    <p class="section-description">Notícias, artigos e destaques do ecossistema de TI e Inovação.</p>
+                </div>
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="radar-search" placeholder="Filtrar por termo (ex: SQL, IA, LGPD)..." autocomplete="off">
+                </div>
+            </div>
+
+            <div class="grid" id="radar-feed">
+                <!-- Conteúdo renderizado via JS -->
+            </div>
+        </section>
+
+        <!-- CONTATO COM DADOS ATUALIZADOS -->
+        <section class="section" id="contato">
+            <div class="contact-panel">
+                <div>
+                    <p class="eyebrow">VAMOS CONVERSAR?</p>
+                    <h2>Tem um projeto ou precisa de uma solução em TI?</h2>
+                    <p>Entre em contato para conversar sobre sua necessidade.</p>
+                </div>
+
+                <div class="contact-links">
+                    <a href="https://wa.me/5563984180987?text=Olá%20Eraldo,%20gostaria%20de%20conversar%20sobre%20um%20projeto." 
+                       target="_blank" rel="noopener noreferrer" class="btn primary">
+                        WhatsApp
+                    </a>
+                    
+                    <button class="btn secondary btn-copy" data-copy="eraldodesign@gmail.com" data-type="E-mail">
+                        📋 Copiar E-mail
+                    </button>
+
+                    <a href="https://github.com/eraldodesign" target="_blank" rel="noopener noreferrer" class="btn secondary">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/analistaeraldopereira/" class="btn secondary" id="linkedin-link">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL DO RADAR TECH -->
+    <div id="radar-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="close-modal" class="modal-close">&times;</button>
+            <div class="modal-header">
+                <span id="modal-category" class="cyber-badge">CATEGORIA</span>
+                <small id="modal-date" class="modal-date">00/00/0000</small>
+            </div>
+            <h2 id="modal-title">Título do Artigo</h2>
+            <div id="modal-body" class="modal-text"></div>
+            <div class="modal-footer">
+                <div id="modal-tags" class="news-tags"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE ARQUITETURA DOS PROJETOS -->
+    <div id="arch-modal" class="modal-overlay">
+        <div class="modal-content arch-modal-content">
+            <button id="close-arch-modal" class="modal-close">&times;</button>
+            <div class="modal-header">
+                <span id="arch-badge" class="cyber-badge">ARQUITETURA DE SISTEMA</span>
+                <small id="arch-version" class="modal-date">v1.0</small>
+            </div>
+            <h2 id="arch-title">Título do Projeto</h2>
+            <p id="arch-subtitle" class="arch-sub"></p>
+            
+            <div class="arch-diagram-box">
+                <div class="diagram-header">
+                    <span>DIAGRAMA DE ARQUITETURA / FLUXO DE DADOS</span>
+                </div>
+                <pre id="arch-diagram" class="diagram-code"></pre>
+            </div>
+
+            <div id="arch-body" class="modal-text"></div>
+
+            <div class="modal-footer arch-footer">
+                <div id="arch-techs" class="project-techs"></div>
+                <a id="arch-repo-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn primary btn-sm">Ver Repositório GitHub →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TERMINAL INTERATIVO CLI -->
+    <div id="terminal-overlay" class="modal-overlay terminal-overlay">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="window-controls">
+                    <span class="dot red" id="close-term-dot"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="terminal-title">eraldo@eptech-shell:~ (bash)</div>
+                <button id="close-term-btn" class="modal-close term-close">&times;</button>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+                <div class="term-line welcome-msg">
+                    <p>Eraldo Pereira Tech CLI [Version 2.6.0-release]</p>
+                    <p>Digite <span class="term-cmd-highlight">'help'</span> para listar os comandos disponíveis ou <span class="term-cmd-highlight">'clear'</span> para limpar a tela.</p>
+                    <p class="term-hint">Dica: Você pode abrir/fechar esta janela pressionando a tecla <kbd>~</kbd> (til) a qualquer momento.</p>
+                </div>
+                <div id="terminal-output"></div>
+                <div class="terminal-input-line">
+                    <span class="prompt">eraldo@eptech:~$</span>
+                    <input type="text" id="terminal-input" autofocus autocomplete="off" spellcheck="false">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="footer-cyber">
+        <canvas id="matrix-footer-canvas"></canvas>
+        <div class="footer-content">
+            <strong>ERALDO PEREIRA TECH</strong>
+            <span>
+                © <span id="year"></span> Tecnologia, conhecimento e soluções inteligentes.
+            </span>
+        </div>
+    </footer>
+
+<!-- WIDGET DE CHAT FLUTUANTE IA -->
+<div id="ai-chat-widget" class="chat-widget">
+    <button id="chat-toggle-btn" class="chat-toggle-btn" title="Conversar com Assistente IA">
+        🤖 <span class="chat-badge">IA</span>
+    </button>
+
+    <div id="chat-box" class="chat-box">
+        <div class="chat-header">
+            <div class="chat-title">
+                <span class="status-dot"></span>
+                <strong>EP Tech Assistente IA</strong>
+            </div>
+            <button id="chat-close-btn" class="chat-close">&times;</button>
+        </div>
+
+        <div id="chat-messages" class="chat-messages">
+            <div class="chat-msg bot">
+                Olá! Sou o assistente virtual do Eraldo Pereira Tech. Como posso ajudar com dúvidas sobre tecnologia, redes ou desenvolvimento hoje?
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Pergunte sobre TI, redes, SQL..." autocomplete="off">
+            <button id="chat-send-btn">Enviar</button>
+        </div>
+    </div>
+</div>
+
+    <!-- Arquivo JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
